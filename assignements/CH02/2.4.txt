@@ -1,0 +1,11 @@
+Without converting the numbers to decimal or binary, try to solve the following
+arithmetic problems, giving the answers in hexadecimal. Hint: Just modify the
+methods you use for performing decimal addition and subtraction to use base 16.
+
+A. 0x605c + 0x5 = 0x6061
+
+B. 0x605c − 0x20 = 0x603c
+
+C. 0x605c + 32 =   0x607c
+
+D. 0x60fa − 0x605c = 0x6093

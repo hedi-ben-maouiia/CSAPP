@@ -1,0 +1,14 @@
+Perform the following number conversions:
+
+
+A. 0x25B9D2 to binary
+    - Answer : 0010 0101 1011 1001 1101 0010
+
+B. binary 1010 1110 0100 1001 to hexadecimal
+    - Answer : 0xAE49
+
+C. 0xA8B3D to binary
+    - Answer : 1001 1000 1011 0011 1101
+
+D. binary 11 0010 0010 1101 1001 0110 to hexadecimal
+    - Answer : 0x322D96  
