@@ -1,0 +1,13 @@
+Suppose that a and b have byte values 0x55 and 0x46, respectively. Fill in the
+following table indicating the byte values of the different C expressions:
+
+Expression      Value       Expression     Value
+
+a & b           0x44        a && b          true
+
+a | b           0x57        a || b          true
+
+~a | ~b         0xBB        !a || !b        false 
+
+a & !b          0x00        a && ~b         true 
+
