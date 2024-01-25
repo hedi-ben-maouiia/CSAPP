@@ -1,0 +1,25 @@
+
+When you apply your function to an array containing elements 1, 2, 3, and 4,
+you find the array now has, as expected, elements 4, 3, 2, and 1. When you try it
+on an array with elements 1, 2, 3, 4, and 5, however, you are surprised to see that
+the array now has elements 5, 4, 0, 2, and 1. In fact, you discover that the code
+always works correctly on arrays of even length, but it sets the middle element to
+0 whenever the array has odd length.
+
+A. For an array of odd length cnt = 2k + 1, what are the values of variables
+first and last in the final iteration of function reverse_array?
+    
+    *Answer: first = last = k/2 + 1
+
+B. Why does this call to function inplace_swap set the array element to 0?
+    
+    *Answer: because when last and first in the same place the inplace_swap swap between the 
+    same value and as we know the inplace_swap function exore the 2 arrgement and as we know  a ^ a = 0 
+    that's why the elemment of the array set to 0
+
+C. What simple modification to the code for reverse_array would eliminate
+this problem?
+
+    *Answer: simple modification is we make the condition of the loop in the reverse_array 
+    first < last then we make sure that the that's two counter will not look at the same element of the array 
+

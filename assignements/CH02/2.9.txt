@@ -22,10 +22,15 @@ RGB Color
 
 Each of these colors can be represented as a bit vector of length 3, and we can
 apply Boolean operations to them.
+
 A. The complement of a color is formed by turning off the lights that are on and
 turning on the lights that are off. What would be the complement of each of
 the eight colors listed above?
+
+--> The complement of the eight colors listed above is when we combine each color with another color 
+
+
 B. Describe the effect of applying Boolean operations on the following colors:
-Blue | Green = 
-Yellow & Cyan =
-Red ^ Magenta =
+Blue | Green =  Cyan 
+Yellow & Cyan = Green
+Red ^ Magenta = Blue
