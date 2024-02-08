@@ -22,6 +22,21 @@ void show_float(float x)
     show_bytes((byte_pointer) &x, sizeof(float));
 }
 
+void show_short(short x)
+{
+    show_bytes((byte_pointer) &x, sizeof(short));
+}
+
+void show_long(long x)
+{
+    show_bytes((byte_pointer) &x, sizeof(long));
+}
+
+void show_double(double x)
+{
+    show_bytes((byte_pointer) &x, sizeof(double));
+}
+
 void show_pointer(void *x)
 {
     show_bytes((byte_pointer) &x, sizeof(void *));
@@ -32,10 +47,19 @@ void test_show_bytes(int val)
     int ival = val;
     float fval = (float) ival;
     int *pval = &val;
+    short shval = (short) val; 
+    long lval = (long) val;
+    double dval = (double) val;
+
     show_int(ival);
     show_float(fval);
     show_pointer(pval);
+    show_short(shval);
+    show_long(lval);
+    show_double(dval);
 }
+
+
 // Practice Problem 2.10
 void inplace_swap(int *x, int *y)
 {
@@ -54,6 +78,15 @@ void reverse_array(int a[], int cnt)
 }
 int main(void)
 {
+    /*Home Work 2.56*/
+    test_show_bytes(0);
+    printf("##############\n");  
+    test_show_bytes(1); 
+    printf("##############\n"); 
+    test_show_bytes(2);
+    printf("##############\n"); 
+    test_show_bytes(3);
+    printf("##############\n"); 
     /*Test for assignment 2.5*/
     int a = 0x12345678;
     byte_pointer ap = (byte_pointer) &a;
