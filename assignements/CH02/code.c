@@ -76,6 +76,24 @@ void reverse_array(int a[], int cnt)
         inplace_swap(&a[first], &a[last]);
     }
 }
+
+void expansion_of_word_bit_size()
+{
+    short sx = -12345;
+    unsigned short usx = sx;
+    int x = sx;
+    unsigned ux = usx;
+
+    printf("sx  = %d:\t", sx);
+    show_bytes((byte_pointer) &sx, sizeof(short));
+    printf("usx = %u:\t", usx);
+    show_bytes((byte_pointer) &usx, sizeof(unsigned short));
+    printf("x   = %d:\t", x);
+    show_bytes((byte_pointer) &x, sizeof(int));
+    printf("ux  = %u:\t", ux);
+    show_bytes((byte_pointer) &ux, sizeof(unsigned));
+}
+
 int main(void)
 {
     /*Home Work 2.56*/
@@ -93,11 +111,19 @@ int main(void)
     show_bytes(ap, 1); /* A. */
     show_bytes(ap, 2); /* B. */
     show_bytes(ap, 3); /* C. */
+
+    printf("##############\n"); 
     
     /*Test for assignment 2.6*/
     const char *m = "mnopqr";
     show_bytes((byte_pointer) m, strlen(m));
-
+    
+    printf("##############\n"); 
+    
+    /*test of page 115*/
+    expansion_of_word_bit_size();
+    
+    printf("##############\n"); 
 
     return 0;
 }
