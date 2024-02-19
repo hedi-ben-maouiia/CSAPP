@@ -1,0 +1,38 @@
+You are given the assignment of writing a function that determines whether one
+string is longer than another. You decide to make use of the string library function
+strlen having the following declaration:
+
+
+
+/* Prototype for library function strlen */
+size_t strlen(const char *s);
+
+
+Here is your first attempt at the function:
+
+/* Determine whether string s is longer than string t */
+/* WARNING: This function is buggy */
+
+int strlonger(char *s, char *t) {
+    return strlen(s) - strlen(t) > 0;
+}
+When you test this on some sample data, things do not seem to work quite
+right. You investigate further and determine that, when compiled as a 32-bit
+120 Chapter 2 Representing and Manipulating Information
+program, data type size_t is defined (via typedef) in header file stdio.h to be
+unsigned.
+
+A. For what cases will this function produce an incorrect result?
+
+in case the string t > string s the function will produce an incorrect result of s > t 
+
+B. Explain how this incorrect result comes about.
+
+    that because size_t is an unsigned and as and if we have for exemple an strlen(s) = 5
+    and strlen(t) = 6 and when we subtract s - t and as we know that unsigned value will yeiled to UMax 
+    and when we compare UMax with strlen(t) it will give as  s > t
+
+C. Show how to fix the code so that it will work reliably.
+
+     we simple make it 
+     return strlen(s) > strlen(t);

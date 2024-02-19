@@ -1,0 +1,24 @@
+Consider the following code that attempts to sum the elements of an array a, where
+the number of elements is given by parameter length:
+1 /* WARNING: This is buggy code */
+2 float sum_elements(float a[], unsigned length) {
+3   int i;
+4   float result = 0;
+5
+6   for (i = 0; i <= length-1; i++)
+7       result += a[i];
+8   return result;
+9 }
+
+
+Answer: we have an unsigned length so it can't be a  < 0 
+
+and if we run it with the arguments of 0 and we have in the condition of the loop lenght-1 
+
+and as we now in the unsigned value 0 - 1 it will yellied to UMax and as the index i will be surelly small than this UMax number 
+
+it will go beyond our expectation and it will access array of index more than the capacity of that array and that's what will make an error of memory 
+
+
+and to solve this problem we shouldent use the unsigned inside the loop or we change the condition to i < length-1
+
