@@ -1,4 +1,4 @@
-Perform the following number conversions:
+* Perform the following number conversions:
 
 
 A. 0x25B9D2 to binary
