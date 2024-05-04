@@ -4,4 +4,8 @@
 
 - The smallest addressable unit of memroy is 8bits or (1 Byte)
 - Every byte of memory has it's own address and the set of all possible addresses is known as the virtual address space. 
-
+- Aside : The C programming language was first developed by Dennis Ritchie of Bell Laboratoires for use with the Unix operating system 
+*** 2.1.1 Hexadecimal Notation 
+- 1 Byte in binary number can range from 00000000(2) --> 11111111(2) 
+- 1 Byte in decimal number can range from 0(10) --> 255(10)
+- 1 Byte in Hexadecimal number can range from 00(16) --> FF(16)
