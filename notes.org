@@ -5,8 +5,33 @@
 - The smallest addressable unit of memroy is 8bits or (1 Byte)
 - Every byte of memory has it's own address and the set of all possible addresses is known as the virtual address space. 
 - Aside : The C programming language was first developed by Dennis Ritchie of Bell Laboratoires for use with the Unix operating system 
+
 *** 2.1.1 Hexadecimal Notation 
 - 1 Byte in binary number can range from 00000000(2) --> 11111111(2) 
 - 1 Byte in decimal number can range from 0(10) --> 255(10)
 - 1 Byte in Hexadecimal number can range from 00(16) --> FF(16)
+- To convert from binary to hex is strateforward we can convert each 4 bits at a time to its hex value :
+    Ex :    
+      Binary (0001 1110 0011 1010 1000)
+      Hex    (1     D    3    A     8 )
+- To convert from Hex to binary it's the inverse of it 
+- To convert from Decimal to Hex we can use this notation : while(x != 0){ x = q * 16 + r} 
+- To convert from Hex to Decimal we can multiply each of the Hexadecimal digits by the appropriate power of 16 d = h * 16 ^ i 
+
+*** 2.1.2 Data Sizes 
+- Every computer has a word size, indicating the nominal size of pointer data.
+- The maximum size of virtual address space determinedf by the word size so for w-bit word size the virtual address space can range from (0 --> 2^w-1)
+
+*** 2.1.3 Addressing and Byte Ordering 
+- In virtually all machines a multi-byte object is stored as a contiguous sequence of bytes, with the address of the object given by teh smallest address of the bytes 
+    Ex : int x;  first the address of x let's say 0x100 and let's assume that the int type have 4 bytes size 
+      so x is stored as 4 contiguous bytes 0x100 0x101 0x1002 0x103 
+- For Ordering a bytes there is two comman conventions 1. Big Endian 2. Littel Endian and that's depends on the type of machine:
+     For Hex value = 0x01234567 
+
+                         0x100 0x101 0x102 0x103
+
+      Big Endian :        01    23    45    67 
+      Littel Endian:      67    45    23    01
+
 
