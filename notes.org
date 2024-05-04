@@ -9,3 +9,4 @@
 - 1 Byte in binary number can range from 00000000(2) --> 11111111(2) 
 - 1 Byte in decimal number can range from 0(10) --> 255(10)
 - 1 Byte in Hexadecimal number can range from 00(16) --> FF(16)
+
