@@ -1,0 +1,7 @@
+* Chapter 2 (Representing and Manipulating Information) 
+
+** 2.1 Information Storage 
+
+- The smallest addressable unit of memroy is 8bits or (1 Byte)
+- Every byte of memory has it's own address and the set of all possible addresses is known as the virtual address space. 
+
