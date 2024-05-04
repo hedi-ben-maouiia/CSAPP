@@ -29,9 +29,11 @@
 - For Ordering a bytes there is two comman conventions 1. Big Endian 2. Littel Endian and that's depends on the type of machine:
      For Hex value = 0x01234567 
 
-                         |0x100| 0x101 | 0x102 | 0x103|
-                         |-----+-------+-------+------|
-      Big Endian   :     |01   | 23    | 45    | 67   |
-      Littel Endian:     |67   | 45    | 23    | 01   |
-                         |-----+-------+-------+------|
+      Ex : First Row ==>  Big Endian , Second ==> Littel Endian 
+                            
+|0x100| 0x101 | 0x102 | 0x103|
+|-----+-------+-------+------|
+|01   | 23    | 45    | 67   |
+|67   | 45    | 23    | 01   |
+|-----+-------+-------+------|
 
