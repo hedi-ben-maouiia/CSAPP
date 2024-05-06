@@ -36,4 +36,7 @@
 |01   | 23    | 45    | 67   |
 |67   | 45    | 23    | 01   |
 |-----+-------+-------+------|
+*** 2.1.4 Representing Strings 
+- The string in C encoded by an array of characters terminated by the null (having value 0)
+- Each characters is represented by sojme standard encoding, with the most common beign the ASCII character code.
 
